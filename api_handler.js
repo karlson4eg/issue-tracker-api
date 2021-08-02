@@ -47,7 +47,7 @@ function installHandler(app) {
     console.log('CORS setting:', enableCors);
     let cors;
     if (enableCors) {
-        const origin = process.env.UI_SERVER_ORIGIN || 'http://localhost:8000';
+        const origin = process.env.UI_SERVER_ORIGIN || 'https://tracker-ui-karlson4eg.herokuapp.com';
         const methods = 'POST';
         cors = { origin, methods, credentials: true };
     } else {
